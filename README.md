@@ -1,31 +1,26 @@
+Financial Market Prediction Using Machine Learning
 
+This MSc Data Science project evaluates whether machine-learning and deep-learning models can outperform a classical statistical baseline when predicting S&P 500 market direction.
 
-<h1 align="center">Hi 👋, I'm Avishi Negi</h1>
-<h3 align="center">A passionate Data Science student from India</h3>
+Project Summary
 
-<img align="right" alt="coding" width=200 src= "https://media1.giphy.com/media/rsUGLKwgSvSxmq1VrZ/200w.gif?cid=82a1493b2plntx2s0254rqr59oetrf4guuf6m42zkwq5lc6l&ep=v1_gifs_related&rid=200w.gif&ct=s">
+Six forecasting approaches were evaluated on 6,955 daily S&P 500 observations from 2000 to 2026:
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=avishi-negi&label=Profile%20views&color=0e75b6&style=flat" alt="avishi-negi" /> </p>
+ARIMA-GARCH
+LSTM
+BiLSTM
+XGBoost
+ARIMA-LSTM hybrid
+CNN-LSTM/XGBoost ensemble
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=avishi-negi" alt="avishi-negi" /></a> </p>
+The project included 20 engineered technical indicators, multi-seed training, financial backtesting, Diebold-Mariano significance testing and SHAP explainability.
 
-- 💬 Ask me about **Python**
+Key Results
+ARIMA-GARCH achieved the strongest genuine result with 52.88% directional accuracy.
+It significantly outperformed the evaluated ML/DL models (p < 0.0001).
+XGBoost achieved a 10-percentage-point advantage over ARIMA during the 2022 bear market.
+Automated diagnostic checks identified two failed runs and one collapsed ensemble across 23 stochastic runs.
+The findings showed that greater model complexity did not necessarily improve forecasting performance.
+Technologies
 
-- 📫 How to reach me **avishi.negi2003@gmail.com**
-
-- 📄 Know about my experiences [file:///C:/Users/DELL/Desktop/resume.pdf](file:///C:/Users/DELL/Desktop/resume.pdf)
-
-- ⚡ Fun fact **I am an introvert..!!**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=avishi-negi&show_icons=true&locale=en&layout=compact" alt="avishi-negi" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=avishi-negi&show_icons=true&locale=en" alt="avishi-negi" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=avishi-negi&" alt="avishi-negi" /></p>
+Python, Pandas, NumPy, scikit-learn, TensorFlow, Keras, XGBoost, statsmodels, SHAP, Matplotlib and Seaborn.
